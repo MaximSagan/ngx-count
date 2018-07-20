@@ -14,13 +14,13 @@ export class NgxCountRootDirective implements AfterContentInit {
     @ContentChildren(NgxCountDirective) countItems: QueryList<NgxCountDirective>;
 
     ngAfterContentInit(): void {
-        this.refreshIndeces();
+        this.refreshIndices();
         this.countItems.changes.subscribe(a => {
-            this.refreshIndeces();
+            this.refreshIndices();
         });
     }
 
-    refreshIndeces(): void {
+    refreshIndices(): void {
         this.countItems.forEach((countItem, i) => {
             countItem.refreshIndex(i, this.countItems.length);
         });
