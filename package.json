@@ -1,6 +1,17 @@
 {
   "name": "ngx-count",
+  "description": "[Angular module] Use directives to count and get indices of components and elements inside the template",
   "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:MaximSagan/ngx-count.git"
+  },
+  "author": {
+    "name": "Maxim Sagan",
+    "email": "maximsagan@gmail.com"
+  },
+  "license": "MIT",
+  "bugs":  "https://github.com/MaximSagan/ngx-count/issues",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
